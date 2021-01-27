@@ -1,4 +1,4 @@
-package com.info.coronavirustracker.controllers;
+package com.info.coronavirustracker.controller;
 
 import java.util.List;
 
@@ -7,8 +7,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
-import com.info.coronavirustracker.models.LocationStats;
-import com.info.coronavirustracker.services.CoronaVirusDataService;
+import com.info.coronavirustracker.model.LocationStats;
+import com.info.coronavirustracker.service.CoronaVirusDataService;
 
 @Controller
 public class HomeController {

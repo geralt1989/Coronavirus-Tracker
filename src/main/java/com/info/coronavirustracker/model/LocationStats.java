@@ -1,4 +1,4 @@
-package com.info.coronavirustracker.models;
+package com.info.coronavirustracker.model;
 
 public class LocationStats {
 	
