@@ -1,0 +1,12 @@
+language: java
+
+jdk:
+ - openjdk11
+
+script:
+ - mvn test -B
+
+# branches for the builds
+branches:
+ only:
+  - master
