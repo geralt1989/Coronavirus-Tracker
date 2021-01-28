@@ -24,5 +24,3 @@ $ git clone https://github.com/geralt1989/Coronavirus-Tracker.git
 $ cd Coronavirus-Tracker
 $ mvn spring-boot:run
 </pre>
-
-![](https://ibb.co/xSLQ9D9)
