@@ -19,9 +19,8 @@ Download the zip or clone the Git repository.
 
 ### Running the application with Maven
 Alternatively you can use the Spring Boot Maven plugin like so:
-
+<pre>
 $ git clone https://github.com/geralt1989/Coronavirus-Tracker.git
-
 $ cd Spring-Boot-Application-Template
-
 $ mvn spring-boot:run
+</pre>
