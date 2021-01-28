@@ -6,7 +6,7 @@ This application lists the current number of cases reported across the globe.
 ## Installing
 ### Running the application with IDE
 
-There are several ways to run a Spring Boot application on your local machine. One way is to execute the main method in the com.arc.sbtest.SBtemplateApplication class from your IDE.
+There are several ways to run a Spring Boot application on your local machine. One way is to execute the main method in the com.info.coronavirustracker.CoronavirusTrackerApplication class from your IDE.
 
 Download the zip or clone the Git repository.
 - Unzip the zip file (if you downloaded one)
@@ -21,6 +21,8 @@ Download the zip or clone the Git repository.
 Alternatively you can use the Spring Boot Maven plugin like so:
 <pre>
 $ git clone https://github.com/geralt1989/Coronavirus-Tracker.git
-$ cd Spring-Boot-Application-Template
+$ cd Coronavirus-Tracker
 $ mvn spring-boot:run
 </pre>
+
+![](https://ibb.co/xSLQ9D9)
