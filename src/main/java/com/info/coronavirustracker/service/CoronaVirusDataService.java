@@ -13,6 +13,7 @@ import javax.annotation.PostConstruct;
 
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVRecord;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 
@@ -20,8 +21,9 @@ import com.info.coronavirustracker.model.LocationStats;
 
 @Service
 public class CoronaVirusDataService {
-
-	private static String VIRUS_DATA_URL = "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv";
+	
+	@Value("${virus.data.url}")
+	private String virusDataUrl;
 	
 	private List<LocationStats> allStats = new ArrayList<>();
 
@@ -35,7 +37,7 @@ public class CoronaVirusDataService {
 		List<LocationStats> newStats = new ArrayList<>();
 		HttpClient client = HttpClient.newHttpClient();
 		HttpRequest request = HttpRequest.newBuilder()
-			.uri(URI.create(VIRUS_DATA_URL))
+			.uri(URI.create(virusDataUrl))
 			.build();
 		HttpResponse<String> httpResponse = client.send(request, HttpResponse.BodyHandlers.ofString());
 		StringReader csvBodyReader = new StringReader(httpResponse.body());
